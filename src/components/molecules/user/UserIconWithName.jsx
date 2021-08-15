@@ -4,8 +4,10 @@ import { UserContext } from "../../../providers/UserProvider";
 
 export const UserIconWithName = (props) => {
   const { img, name } = props;
+  // エラー未解決
   const { userInfo } = useContext(UserContext);
   const isAdmin = userInfo ? userInfo.isAdmin : false;
+  console.log(userInfo);
 
   return (
     <SContainer>
