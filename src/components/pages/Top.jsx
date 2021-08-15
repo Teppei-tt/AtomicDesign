@@ -10,6 +10,7 @@ export const Top = () => {
 
   const onClickAdmin = () => {
     setUserInfo({ isAdmin: true });
+
     history.push("/users");
   };
   const onClickGeneral = () => {
